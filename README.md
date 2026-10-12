@@ -118,7 +118,7 @@ ssh srv2
 
 > This step is not required by the project. It is a common hardening practice for any server with a public IP.
 
-> ⚠️ Do this **only after** both keys are confirmed to work, and keep one SSH session open until the result is verified. Otherwise you can lock yourself out of the server.
+> Do this **only after** both keys are confirmed to work, and keep one SSH session open until the result is verified. Otherwise you can lock yourself out of the server.
 
 Instead of editing the main `/etc/ssh/sshd_config`, a separate drop-in file is created:
 
