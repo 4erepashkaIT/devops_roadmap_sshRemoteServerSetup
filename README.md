@@ -87,10 +87,6 @@ chmod 600 ~/.ssh/config
 ```
 
 ```
-Host *
-    AddKeysToAgent yes
-    UseKeychain yes
-
 Host srv1
     HostName <server_ip>
     User <user>
@@ -102,6 +98,10 @@ Host srv2
     User <user>
     IdentityFile ~/.ssh/roadmap_key2
     IdentitiesOnly yes
+
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
 ```
 
 - `srv1` / `srv2` — short aliases, one per key
